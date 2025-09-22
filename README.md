@@ -73,9 +73,16 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 
 Clone the repo:
 
-```git clone git@github.com:ritesh355/portfolio.git
+```
+git clone git@github.com:ritesh355/portfolio.git
 cd portfolio
 ```
+Install dependencies:
+
+```
+npm install
+```
+
 
 
 
