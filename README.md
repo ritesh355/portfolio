@@ -132,8 +132,8 @@ Located in .github/workflows/main.yml:
 - SSH into EC2, pulls new image, restarts container.
 
   **Example Workflow**
-  ```
   
+```  
 name: Build, Push & Deploy with Rollback
 
 on:
