@@ -82,6 +82,14 @@ Install dependencies:
 ```
 npm install
 ```
+Run dev server:
+
+```
+npm run dev
+```
+then visit **http://localhost:3000**
+
+---
 
 
 
