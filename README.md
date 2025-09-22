@@ -218,11 +218,19 @@ jobs:
             docker rm -f nextjs-portfolio-backup || true
           fi
 
-          ```
+```
 
 
+## 👨‍💻 Author
 
+**Ritesh Singh**
 
+🌐 [LinkedIn](https://www.linkedin.com/in/ritesh-singh-092b84340/) 
+📝 [Hashnode](https://ritesh-devops.hashnode.dev/) 
+💻[GitHub](https://github.com/ritesh355/)
+
+--- 
+⚡ Built with ❤️ using Next.js + Docker + AWS + DevOps
 
 
 
