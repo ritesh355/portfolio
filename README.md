@@ -8,9 +8,12 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 
 ![Workflow Diagram](./assets/workflow.png)
 
+--- 
+
 ## 🚀 CI/CD Status
 
 ![Build & Auto-Deploy](https://github.com/ritesh355/portfolio/actions/workflows/main.yml/badge.svg)
+
 
 ## 🔄 Deployment Workflow
 
@@ -27,11 +30,6 @@ flowchart LR
   I --> J{Is New Running?}
   J -- yes --> K[Success]
   J -- no --> L[Rollback to Previous]
-
-
-
-
-
 ---
 
 ## 📑 Table of Contents
