@@ -7,8 +7,7 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 ## ⚡ Workflow
 
 ![Workflow Diagram](./assets/workflow.png)
-
---- 
+![Homepage](./assets/home.png)
 
 ## 🚀 CI/CD Status
 
