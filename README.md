@@ -10,7 +10,7 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 
 ---
 !![Homepage](./assets/home.png)
-[Homepage](./assets/about.png)
+!![Homepage](./assets/about.png)
 ![Homepage](./assets/skill.png)
 ![Homepage](./assets/contact.png)
 
