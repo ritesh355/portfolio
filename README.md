@@ -49,6 +49,7 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 
 ## 📂 Project Structure 
 
+![Workflow Diagram](./assets/folder.png)
 
 
 
