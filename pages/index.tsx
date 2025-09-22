@@ -70,25 +70,27 @@ export default function Home() {
           </motion.div>
 
           {/* View All Projects Button */}
-          <div className="text-center mt-14">
-            <Link
-              href="/projects"
-              className="inline-block bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] text-[#1F2937] font-semibold px-8 py-3 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
-            >
-              View All Projects →
-            </Link>
-         <Link
-              href="/skills"
-              className="inline-block bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] text-[#1F2937] font-semibold px-8 py-3 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 ml-4"
-            >
-              View Skills →
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-block bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] text-[#1F2937] font-semibold px-8 py-3 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 ml-4"
-            >
-              Contact Me →
-            </Link>
+  <div className="text-center mt-14">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <Link
+                href="/projects"
+                className="inline-block bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] text-[#1F2937] font-semibold px-8 py-3 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+              >
+                View All Projects →
+              </Link>
+              <Link
+                href="/skills"
+                className="inline-block bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] text-[#1F2937] font-semibold px-8 py-3 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+              >
+                View Skills →
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-block bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] text-[#1F2937] font-semibold px-8 py-3 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+              >
+                Contact Me →
+              </Link>
+            </div>
           </div>
         </section>
       </main>
