@@ -91,6 +91,18 @@ then visit **http://localhost:3000**
 
 ---
 
+## 📦 Docker Setup
+Build the image:
+```
+docker build -t ritesh355/nextjs-portfolio:latest .
+```
+run the container:
+```
+docker run -d -p 3000:3000 ritesh355/nextjs-portfolio:latest
+```
+then visit ***http://localhost:3000***
+
+
 
 
 
