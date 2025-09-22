@@ -8,6 +8,16 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 
 ![Workflow Diagram](./assets/workflow.png)
 
+flowchart LR
+  A[GitHub Repo] -->|Push code| B[GitHub Actions]
+  B --> C[Build & Test Next.js]
+  C --> D[Build Docker Image]
+  D --> E[Push to DockerHub]
+  E --> F[SSH to AWS EC2]
+  F --> G[Pull latest image]
+  G --> H[Restart container]
+  H --> I[Portfolio Live 🚀]
+
 ---
 
 ## 📑 Table of Contents
