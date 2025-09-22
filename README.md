@@ -131,6 +131,94 @@ Located in .github/workflows/main.yml:
 
 - SSH into EC2, pulls new image, restarts container.
 
+  **Example Workflow**
+  ```
+  
+name: Build, Push & Deploy with Rollback
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout repo
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # 2. Setup Node.js
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    # 3. Install dependencies
+    - name: Install dependencies
+      run: npm install --legacy-peer-deps
+
+    # 4. Run build
+    - name: Build project
+      run: npm run build
+
+    # 5. Log in to Docker Hub
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    # 6. Build Docker image
+    - name: Build Docker image
+      run: |
+        docker build -t ritesh355/nextjs-portfolio:latest \
+                     -t ritesh355/nextjs-portfolio:v1 \
+                     -t ritesh355/nextjs-portfolio:v1.0.0 .
+
+    # 7. Push Docker image
+    - name: Push Docker image
+      run: |
+        docker push ritesh355/nextjs-portfolio:latest
+        docker push ritesh355/nextjs-portfolio:v1
+        docker push ritesh355/nextjs-portfolio:v1.0.0
+
+    # 8. Deploy to EC2 with rollback
+    - name: Deploy to EC2
+      uses: appleboy/ssh-action@v0.1.9
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          echo "Pulling latest Docker image..."
+          docker pull ritesh355/nextjs-portfolio:latest
+
+          # Backup old container if exists
+          if docker ps -a --format '{{.Names}}' | grep -Eq "^nextjs-portfolio\$"; then
+            echo "Backing up current container..."
+            docker rename nextjs-portfolio nextjs-portfolio-backup
+          fi
+
+          # Run new container
+          echo "Starting new container..."
+          docker run -d --name nextjs-portfolio -p 80:3000 ritesh355/nextjs-portfolio:latest
+
+          # Check if container is running
+          sleep 5
+          if ! docker ps --format '{{.Names}}' | grep -Eq "^nextjs-portfolio\$"; then
+            echo "New container failed! Rolling back..."
+            docker rm nextjs-portfolio || true
+            docker rename nextjs-portfolio-backup nextjs-portfolio || true
+            docker start nextjs-portfolio || true
+          else
+            echo "Deployment successful! Removing backup..."
+            docker rm -f nextjs-portfolio-backup || true
+          fi
+
+          ```
 
 
 
