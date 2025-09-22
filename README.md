@@ -226,7 +226,9 @@ jobs:
 **Ritesh Singh**
 
 🌐 [LinkedIn](https://www.linkedin.com/in/ritesh-singh-092b84340/) 
+|
 📝 [Hashnode](https://ritesh-devops.hashnode.dev/) 
+|
 💻[GitHub](https://github.com/ritesh355/)
 
 --- 
