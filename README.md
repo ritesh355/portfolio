@@ -44,15 +44,7 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 ---
 
 ## 📂 Project Structure
-```bash
-portfolio/
-├── public/                # Static assets
-├── pages/                 # Next.js pages
-├── components/            # UI components
-├── styles/                # Global styles
-├── Dockerfile             # Multi-stage Dockerfile
-├── .github/workflows/     # GitHub Actions pipeline
-│   └── main.yml
-└── README.md              # Project documentation
+![Workflow Diagram](./assets/workflow.png)
+
 
 
