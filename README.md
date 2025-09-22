@@ -9,6 +9,9 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 ![Workflow Diagram](./assets/workflow.png)
 
 ---
+
+## [📸 Screenshots]
+
 !![Homepage](./assets/home.png)
 !![Homepage](./assets/about.png)
 ![Homepage](./assets/skill.png)
