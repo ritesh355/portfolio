@@ -119,6 +119,18 @@ docker run -d -p 80:3000 ritesh355/nextjs-portfolio:latest
 ```
 4.Visit http://EC2-Public-IP
 
+---
+
+## 🤖 GitHub Actions CI/CD
+
+Located in .github/workflows/main.yml:
+
+- Runs tests (npm run build).
+
+- Builds & pushes image to DockerHub.
+
+- SSH into EC2, pulls new image, restarts container.
+
 
 
 
