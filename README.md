@@ -69,21 +69,16 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 
 ![Workflow Diagram](./assets/folder.png)
 
-## 🔄 Deployment Workflow
+## 💻 Run Locally
 
-```mermaid
-flowchart LR
-  A[Push to GitHub] --> B[GitHub Actions]
-  B --> C[Build & Test]
-  C --> D[Docker Build]
-  D --> E[Push to Docker Hub]
-  E --> F[SSH to EC2]
-  F --> G[Pull New Image]
-  G --> H[Stop & Remove Old Container]
-  H --> I[Run New Container]
-  I --> J{Is New Running?}
-  J -- yes --> K[Success]
-  J -- no --> L[Rollback to Previous]
+Clone the repo:
+
+```git clone git@github.com:ritesh355/portfolio.git
+cd portfolio
+```
+
+
+
 
 
 
