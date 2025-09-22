@@ -102,6 +102,26 @@ docker run -d -p 3000:3000 ritesh355/nextjs-portfolio:latest
 ```
 then visit ***http://localhost:3000***
 
+---
+## ☁️ Deployment on AWS EC2 
+1.Launch Ubuntu EC2 Free Tier.
+![Workflow Diagram](./assets/ec2.png)
+2.after connetint that ec2 Install Docker:
+```
+sudo apt update && sudo apt install -y docker.io
+sudo usermod -aG docker ubuntu
+```
+3. Pull and run image:
+ ```
+  docker pull ritesh355/nextjs-portfolio:latest
+docker run -d -p 80:3000 ritesh355/nextjs-portfolio:latest
+```
+4.Visit http://<EC2-Public-IP>
+
+
+
+
+
 
 
 
