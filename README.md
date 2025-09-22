@@ -8,15 +8,29 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 
 ![Workflow Diagram](./assets/workflow.png)
 
+## 🚀 CI/CD Status
+
+![Build & Auto-Deploy](https://github.com/ritesh355/portfolio/actions/workflows/main.yml/badge.svg)
+
+## 🔄 Deployment Workflow
+
+```mermaid
 flowchart LR
-  A[GitHub Repo] -->|Push code| B[GitHub Actions]
-  B --> C[Build & Test Next.js]
-  C --> D[Build Docker Image]
-  D --> E[Push to DockerHub]
-  E --> F[SSH to AWS EC2]
-  F --> G[Pull latest image]
-  G --> H[Restart container]
-  H --> I[Portfolio Live 🚀]
+  A[Push to GitHub] --> B[GitHub Actions]
+  B --> C[Build & Test]
+  C --> D[Docker Build]
+  D --> E[Push to Docker Hub]
+  E --> F[SSH to EC2]
+  F --> G[Pull New Image]
+  G --> H[Stop & Remove Old Container]
+  H --> I[Run New Container]
+  I --> J{Is New Running?}
+  J -- yes --> K[Success]
+  J -- no --> L[Rollback to Previous]
+
+
+
+
 
 ---
 
