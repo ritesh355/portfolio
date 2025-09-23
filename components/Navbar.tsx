@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 import { useState } from "react";
 import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
+import dynamic from "next/dynamic" ;
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();

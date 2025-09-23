@@ -7,6 +7,7 @@ import { Suspense, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Image from "next/image";
 import { FiAward, FiBriefcase, FiEdit3 } from "react-icons/fi";
+import dynamic from "next/dynamic" ;
 
 // Works (Blogs) Data
 const works = [
@@ -196,9 +197,7 @@ export default function About() {
               animate="visible"
               variants={fadeInUp}
             >
-              {/* Typed Blob components */}
-              <Blob className="top-0 right-0 bg-[#8B5CF6]/30 dark:bg-[#8B5CF6]/70" />
-              <Blob className="bottom-0 left-0 bg-[#EC4899]/30 dark:bg-[#EC4899]/70" delay={2000} />
+              {/* Typed Blob components/*>
 
               {/* Profile Image with Pulse Animation */}
               <motion.div

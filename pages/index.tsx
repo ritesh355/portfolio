@@ -50,11 +50,11 @@ export default function Home() {
           >
             <motion.div variants={item}>
               <ProjectCard
-                title="CI/CD Pipeline for E-commerce"
+                title="CI/CD Pipeline for webapp"
                 description="Built a fully automated pipeline using Jenkins, Docker, and Kubernetes for seamless deployments."
                 technologies={["Jenkins", "Docker", "Kubernetes", "AWS"]}
-                github="https://github.com/ritesh355/ci-cd-pipeline"
-                blog="https://ritesh-devops.hashnode.dev/ci-cd-pipeline"
+                github="https://github.com/ritesh355/flask-ci-cd-demo"
+                blog="https://ritesh-devops.hashnode.dev/day-40-cicd-with-flask-docker-github-actions-100daysofdevops"
               />
             </motion.div>
 
@@ -64,7 +64,7 @@ export default function Home() {
                 description="Deployed a scalable Flask + Nginx application on Docker Compose with monitoring enabled."
                 technologies={["Flask", "Docker", "Nginx", "Prometheus"]}
                 github="https://github.com/ritesh355/weather-app"
-                blog="https://ritesh-devops.hashnode.dev/weather-app-deployment"
+                blog="https://ritesh-devops.hashnode.dev/day-30-weather-app-dockerized-flask-nginx"
               />
             </motion.div>
           </motion.div>
