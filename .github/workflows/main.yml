@@ -1,4 +1,4 @@
-name: Build, Push & Deploy with Rollback
+name: Build, Push & Deploy with Rollbackk
 
 on:
   push:
