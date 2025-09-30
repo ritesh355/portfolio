@@ -4,13 +4,14 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
   {
-    title: "Real-Time DevOps Projects Hub",
-    description:
-      "A dedicated website featuring real-time DevOps & Cloud projects from beginner to production-level. Perfect to learn by doing!",
-    technologies: ["AWS", "Docker", "Kubernetes", "Terraform", "Linux", "Azure", "Jenkins"],
-    github: "https://github.com/ritesh355/devops-projects",
-    blog: "https://ritesh-devops.hashnode.dev",
-  },
+  title: "AWS Projects Hub",
+  description:
+    "A collection of hands-on AWS projects from beginner to advanced. Includes EC2, S3, IAM, VPC, RDS, Lambda, and CI/CD for real-world cloud learning.",
+  technologies: ["AWS", "EC2", "S3", "IAM", "VPC", "RDS", "Lambda", "CloudFront", "CodePipeline"],
+  github: "https://github.com/ritesh355/aws-projects",
+  blog: "https://ritesh-devops.hashnode.dev",
+},
+ 
   {
     title: "Weather App",
     description:

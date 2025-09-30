@@ -47,7 +47,17 @@ export default function Home() {
             variants={container}
             initial="hidden"
             animate="visible"
-          >
+          > 
+            <motion.div variants={item}>
+  <ProjectCard
+    title="AWS Projects Hub"
+    description="A collection of hands-on AWS projects from beginner to advanced. Includes EC2, S3, IAM, VPC, RDS, Lambda, and CI/CD for real-world cloud learning."
+    technologies={["AWS", "EC2", "S3", "IAM", "VPC", "RDS", "Lambda", "CloudFront", "CodePipeline"]}
+    github="https://github.com/ritesh355/aws-projects"
+    blog="https://ritesh-devops.hashnode.dev"
+  />
+</motion.div>
+
             <motion.div variants={item}>
               <ProjectCard
                 title="CI/CD Pipeline for webapp"

@@ -105,6 +105,32 @@ const certifications = [
       "Gained confidence with real-world automation use cases for production-grade workflows.",
     ],
   },
+  
+  {
+  name: "Docker - Introducing Docker Essentials, Containers, and More",
+  issuedBy: "Udemy",
+  date: "2025",
+  link: "https://www.udemy.com/certificate/UC-adea6640-90c4-4555-8cd2-f04a24be0665/", // replace with your actual certificate link
+  learnings: [
+    "Understood Docker architecture and containerization fundamentals.",
+    "Learned how to build, run, and manage containers effectively.",
+    "Worked with Docker images, networks, and volumes for real-world use cases.",
+    "Prepared a solid foundation for Kubernetes and advanced container orchestration.",
+  ],
+},
+{
+  name: "Linux for Cloud & DevOps Engineer",
+  issuedBy: "Udemy",
+  date: "2025",
+  link: "https://www.udemy.com/certificate/UC-26ebb339-887d-4821-9ebe-f003154aca3f/", // replace with your actual certificate link
+  learnings: [
+    "Mastered essential Linux commands for DevOps and cloud workflows.",
+    "Worked with user management, permissions, and process control.",
+    "Explored shell scripting for automation in DevOps tasks.",
+    "Developed confidence to navigate and manage Linux servers in production environments.",
+  ],
+},
+
 ];
 
 // Reusable fade-in animation
