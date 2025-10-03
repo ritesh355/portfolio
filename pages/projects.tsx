@@ -9,8 +9,8 @@ const projects = [
   description:
     "A static website hosted on AWS S3 with CloudFront as CDN and automated deployment via GitHub Actions.",
   technologies: ["AWS S3", "CloudFront", "GitHub Actions", "CI/CD"],
-  github: "https://github.com/ritesh355/static-website-cicd", // replace with your repo link
-  blog: "https://ritesh-devops.hashnode.dev/static-website-cicd", // replace with your blog link if you write one
+  github: "https://github.com/ritesh355/MY-GALLERY-PROJECT", // replace with your repo link
+  blog: "", // replace with your blog link if you write one
 },
 
   {
