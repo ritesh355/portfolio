@@ -49,14 +49,25 @@ export default function Home() {
             animate="visible"
           > 
             <motion.div variants={item}>
+             <ProjectCard
+              title="AWS Projects Hub"
+              description="A collection of hands-on AWS projects from beginner to advanced. Includes EC2, S3, IAM, VPC, RDS, Lambda, and CI/CD for real-world cloud learning."
+              technologies={["AWS", "EC2", "S3", "IAM", "VPC", "RDS", "Lambda", "CloudFront", "CodePipeline"]}
+              github="https://github.com/ritesh355/aws-projects"
+              blog="https://ritesh-devops.hashnode.dev"
+           />
+          </motion.div>
+          
+           <motion.div variants={item}>
   <ProjectCard
-    title="AWS Projects Hub"
-    description="A collection of hands-on AWS projects from beginner to advanced. Includes EC2, S3, IAM, VPC, RDS, Lambda, and CI/CD for real-world cloud learning."
-    technologies={["AWS", "EC2", "S3", "IAM", "VPC", "RDS", "Lambda", "CloudFront", "CodePipeline"]}
-    github="https://github.com/ritesh355/aws-projects"
+    title="DevOps Journal"
+    description="My 100 Days of DevOps journey, documenting hands-on practice with Docker, Kubernetes, CI/CD, GitHub Actions, Monitoring, and more."
+    technologies={["DevOps", "Docker", "Kubernetes", "GitHub Actions", "Jenkins", "Terraform", "Linux"]}
+    github="https://github.com/ritesh355/Devops-journal"
     blog="https://ritesh-devops.hashnode.dev"
   />
 </motion.div>
+
 
             <motion.div variants={item}>
               <ProjectCard

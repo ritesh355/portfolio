@@ -3,15 +3,16 @@ import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
 
 const projects = [
-  {
-  title: "AWS Projects Hub",
-  description:
-    "A collection of hands-on AWS projects from beginner to advanced. Includes EC2, S3, IAM, VPC, RDS, Lambda, and CI/CD for real-world cloud learning.",
-  technologies: ["AWS", "EC2", "S3", "IAM", "VPC", "RDS", "Lambda", "CloudFront", "CodePipeline"],
-  github: "https://github.com/ritesh355/aws-projects",
-  blog: "https://ritesh-devops.hashnode.dev",
-},
  
+ {
+  title: "Static Website Hosting with AWS S3 + CloudFront + CI/CD",
+  description:
+    "A static website hosted on AWS S3 with CloudFront as CDN and automated deployment via GitHub Actions.",
+  technologies: ["AWS S3", "CloudFront", "GitHub Actions", "CI/CD"],
+  github: "https://github.com/ritesh355/static-website-cicd", // replace with your repo link
+  blog: "https://ritesh-devops.hashnode.dev/static-website-cicd", // replace with your blog link if you write one
+},
+
   {
     title: "Weather App",
     description:
