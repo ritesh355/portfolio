@@ -20,7 +20,7 @@ const projects = [
   technologies: ["Node.js", "Jenkins", "Docker", "AWS EC2", "Docker Hub"],
   github: "https://github.com/ritesh355/Docker-Jenkins-app",
   blog: "https://ritesh-devops.hashnode.dev/", // replace with exact blog link if you write one
-}
+},
 
   {
     title: "Weather App",
