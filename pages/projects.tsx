@@ -13,6 +13,15 @@ const projects = [
   blog: "", // replace with your blog link if you write one
 },
 
+{
+  title: "Jenkins CI/CD Pipeline with Docker & Node.js",
+  description:
+    "A Node.js app deployed with a Jenkins CI/CD pipeline on AWS EC2, using Docker for containerization and automated Docker Hub pushes.",
+  technologies: ["Node.js", "Jenkins", "Docker", "AWS EC2", "Docker Hub"],
+  github: "https://github.com/ritesh355/Docker-Jenkins-app",
+  blog: "https://ritesh-devops.hashnode.dev/", // replace with exact blog link if you write one
+}
+
   {
     title: "Weather App",
     description:
