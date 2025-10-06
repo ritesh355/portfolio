@@ -22,7 +22,7 @@ const projects = [
 
   },
  
-  {
+ {
   title: "CI/CD Pipeline for webapp",
   description:
     "Built a fully automated pipeline using Jenkins, Docker, and Kubernetes for seamless deployments.",
