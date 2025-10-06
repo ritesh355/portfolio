@@ -38,8 +38,8 @@ jobs:
       run: |
         docker push ritesh355/nextjs-portfolio:${{ github.sha }}
         docker push ritesh355/nextjs-portfolio:latest
-
-    # 6️⃣ Deploy to EC2
+          
+    # 6️⃣ Deploy to EC2 (Improved)
     - name: Deploy to EC2
       uses: appleboy/ssh-action@v0.1.9
       with:
@@ -47,18 +47,22 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          echo "✅ Pulling latest Docker image..."
-          docker pull ritesh355/nextjs-portfolio:latest
-
-          echo "🛑 Stopping and removing old container if exists..."
+          echo "🔄 Cleaning up old containers and images..."
           docker stop nextjs-portfolio || true
           docker rm nextjs-portfolio || true
+          docker rmi ritesh355/nextjs-portfolio:latest || true
 
-          echo "🆕 Starting new container..."
-          docker run -d --name nextjs-portfolio -p 80:3000 ritesh355/nextjs-portfolio:latest
+          echo "✅ Pulling the latest image..."
+          docker pull ritesh355/nextjs-portfolio:latest
 
-          echo "📝 Listing running containers..."
+          echo "🚀 Starting new container..."
+          docker run -d \
+            --name nextjs-portfolio \
+            -p 80:3000 \
+            --restart always \
+            ritesh355/nextjs-portfolio:latest
+
+          echo "🧾 Verifying deployment..."
           docker ps
-
-          echo "📝 Listing all nextjs-portfolio images..."
           docker images | grep nextjs-portfolio
+
