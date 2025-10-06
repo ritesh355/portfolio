@@ -4,23 +4,40 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
  
- {
+  {
   title: "Static Website Hosting with AWS S3 + CloudFront + CI/CD",
   description:
     "A static website hosted on AWS S3 with CloudFront as CDN and automated deployment via GitHub Actions.",
   technologies: ["AWS S3", "CloudFront", "GitHub Actions", "CI/CD"],
   github: "https://github.com/ritesh355/MY-GALLERY-PROJECT", // replace with your repo link
   blog: "", // replace with your blog link if you write one
-},
-
-{
+  },
+ {
   title: "Jenkins CI/CD Pipeline with Docker & Node.js",
   description:
     "A Node.js app deployed with a Jenkins CI/CD pipeline on AWS EC2, using Docker for containerization and automated Docker Hub pushes.",
   technologies: ["Node.js", "Jenkins", "Docker", "AWS EC2", "Docker Hub"],
   github: "https://github.com/ritesh355/Docker-Jenkins-app",
   blog: "https://ritesh-devops.hashnode.dev/", // replace with exact blog link if you write one
+
+  },
+ 
+  {
+  title: "CI/CD Pipeline for webapp",
+  description:
+    "Built a fully automated pipeline using Jenkins, Docker, and Kubernetes for seamless deployments.",
+  technologies: ["Jenkins", "Docker", "Kubernetes", "AWS"],
+  github: "https://github.com/ritesh355/flask-ci-cd-demo",
+  blog: "https://ritesh-devops.hashnode.dev/day-40-cicd-with-flask-docker-github-actions-100daysofdevops",
 },
+ {
+  title: "Weather App Deployment",
+  description:
+    "Deployed a scalable Flask + Nginx application on Docker Compose with monitoring enabled.",
+  technologies: ["Flask", "Docker", "Nginx", "Prometheus"],
+  github: "https://github.com/ritesh355/weather-app",
+  blog: "https://ritesh-devops.hashnode.dev/day-30-weather-app-dockerized-flask-nginx",
+ },
 
   {
     title: "Weather App",
