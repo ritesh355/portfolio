@@ -59,36 +59,15 @@ export default function Home() {
           </motion.div>
           
            <motion.div variants={item}>
-  <ProjectCard
+   <ProjectCard
     title="DevOps Journal"
     description="My 100 Days of DevOps journey, documenting hands-on practice with Docker, Kubernetes, CI/CD, GitHub Actions, Monitoring, and more."
     technologies={["DevOps", "Docker", "Kubernetes", "GitHub Actions", "Jenkins", "Terraform", "Linux"]}
     github="https://github.com/ritesh355/Devops-journal"
     blog="https://ritesh-devops.hashnode.dev"
-  />
-</motion.div>
-
-
-            <motion.div variants={item}>
-              <ProjectCard
-                title="CI/CD Pipeline for webapp"
-                description="Built a fully automated pipeline using Jenkins, Docker, and Kubernetes for seamless deployments."
-                technologies={["Jenkins", "Docker", "Kubernetes", "AWS"]}
-                github="https://github.com/ritesh355/flask-ci-cd-demo"
-                blog="https://ritesh-devops.hashnode.dev/day-40-cicd-with-flask-docker-github-actions-100daysofdevops"
-              />
-            </motion.div>
-
-            <motion.div variants={item}>
-              <ProjectCard
-                title="Weather App Deployment"
-                description="Deployed a scalable Flask + Nginx application on Docker Compose with monitoring enabled."
-                technologies={["Flask", "Docker", "Nginx", "Prometheus"]}
-                github="https://github.com/ritesh355/weather-app"
-                blog="https://ritesh-devops.hashnode.dev/day-30-weather-app-dockerized-flask-nginx"
-              />
-            </motion.div>
-          </motion.div>
+   />
+   </motion.div>
+  </motion.div>
 
           {/* View All Projects Button */}
   <div className="text-center mt-14">

@@ -22,7 +22,7 @@ const projects = [
 
   },
  
- {
+  {
   title: "CI/CD Pipeline for webapp",
   description:
     "Built a fully automated pipeline using Jenkins, Docker, and Kubernetes for seamless deployments.",
@@ -30,17 +30,10 @@ const projects = [
   github: "https://github.com/ritesh355/flask-ci-cd-demo",
   blog: "https://ritesh-devops.hashnode.dev/day-40-cicd-with-flask-docker-github-actions-100daysofdevops",
 },
- {
-  title: "Weather App Deployment",
-  description:
-    "Deployed a scalable Flask + Nginx application on Docker Compose with monitoring enabled.",
-  technologies: ["Flask", "Docker", "Nginx", "Prometheus"],
-  github: "https://github.com/ritesh355/weather-app",
-  blog: "https://ritesh-devops.hashnode.dev/day-30-weather-app-dockerized-flask-nginx",
- },
+
 
   {
-    title: "Weather App",
+    title: "Weather App Deployment",
     description:
       "A weather app with Flask backend, Docker, and Nginx reverse proxy deployment.",
     technologies: ["Flask", "Docker", "Nginx", "AWS"],
