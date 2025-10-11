@@ -1,8 +1,12 @@
 # 🚀 Next.js Portfolio – DevOps Ready
+This is **Personal Portfolio Project**  built with **Next.js**, containerized using **Docker**, deployed on **AWS EC2 (Free Tier)**, and distributed globally via **AWS CloudFront CDN**.
 
-This is my **personal portfolio project** built with **Next.js**, containerized with **Docker**, deployed on **AWS EC2 (Free Tier)**, and automated with **GitHub Actions CI/CD** + **Terraform** for Infrastructure as Code.
+The deployment pipeline is fully automated using **GitHub Actions (CI/CD)** — from building the Docker image to pushing it to **Docker Hub** and deploying it on **EC2**.
 
-It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices (CI/CD, Docker, Cloud, IaC)**.  
+For performance and container health monitoring, the project integrates a **Monitoring Stack** using **Prometheus**, **Grafana**, and **cAdvisor**, all connected through a shared Docker network.
+
+
+It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices (CI/CD, Docker, DockerHub ,aws ,cloudfront, promithius and grafana)**.  
 
 ## ⚡ Workflow
 ![Workflow Diagram](./assets/portfolio1.png)
@@ -216,6 +220,56 @@ jobs:
             echo "Deployment successful! Removing backup..."
             docker rm -f nextjs-portfolio-backup || true
           fi
+
+```
+## 📊 Monitoring Stack
+
+To monitor the Next.js portfolio container, I implemented a full container monitoring setup using **Prometheus, Grafana, and cAdvisor**.
+
+### Steps Implemented
+
+1. **Run cAdvisor container** to collect metrics:
+```bash
+docker run -d \
+  --name=cadvisor \
+  --network=monitoring \
+  -p 8080:8080 \
+  -v /:/rootfs:ro \
+  -v /var/run:/var/run:ro \
+  -v /sys:/sys:ro \
+  -v /var/lib/docker/:/var/lib/docker:ro \
+  gcr.io/cadvisor/cadvisor:v0.47.2
+```
+2.  **Run Prometheus container with cAdvisor** target:
+   ```
+docker run -d \
+  --name=prometheus \
+  --network=monitoring \
+  -p 9090:9090 \
+  -v /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml \
+  prom/prometheus
+```
+3. **Prometheus configuration** (/etc/prometheus/prometheus.yml):
+  
+```
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+
+
+
+```
+4. Run **Grafana container**
+```
+docker run -d \
+  --name=grafana \
+  --network=monitoring \
+  -p 3001:3000 \
+  grafana/grafana
 
 ```
 
