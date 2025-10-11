@@ -240,6 +240,9 @@ docker run -d \
   -v /var/lib/docker/:/var/lib/docker:ro \
   gcr.io/cadvisor/cadvisor:v0.47.2
 ```
+!![Homepage](./assets/grap0.png)
+
+
 2.  **Run Prometheus container with cAdvisor** target:
    ```
 docker run -d \
@@ -249,6 +252,11 @@ docker run -d \
   -v /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml \
   prom/prometheus
 ```
+
+!![Homepage](./assets/cd.png)
+
+
+
 3. **Prometheus configuration** (/etc/prometheus/prometheus.yml):
   
 ```
@@ -260,9 +268,10 @@ scrape_configs:
     static_configs:
       - targets: ['cadvisor:8080']
 
-
-
 ```
+!![Homepage](./assets/graph.png)
+
+
 4. Run **Grafana container**
 ```
 docker run -d \
@@ -272,6 +281,8 @@ docker run -d \
   grafana/grafana
 
 ```
+!![Homepage](./assets/graph2.png)
+
 
 
 ## 👨‍💻 Author
