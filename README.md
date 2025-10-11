@@ -28,21 +28,7 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 
 ![Build & Auto-Deploy](https://github.com/ritesh355/portfolio/actions/workflows/main.yml/badge.svg)
 
----
 
-
-## 📑 Table of Contents
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [📂 Project Structure](#-project-structure)
-- [⚡ Workflow](#-workflow)
-- [💻 Run Locally](#-run-locally)
-- [📦 Docker Setup](#-docker-setup)
-- [☁️ Deployment on AWS EC2](#️-deployment-on-aws-ec2)
-- [🤖 GitHub Actions CI/CD](#-github-actions-cicd)
-- [🧩 Terraform for Infrastructure](#-terraform-for-infrastructure)
-- [📸 Screenshots](#-screenshots)
-- [👨‍💻 Author](#-author)
 
 ---
 
@@ -55,7 +41,7 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
   - Runs tests (`npm run build`).
   - Builds and pushes Docker image to DockerHub.
   - SSH into EC2 and redeploys automatically.
-- 📜 Infrastructure automated with **Terraform**.
+- 📜 **Monitoring Stack** using **Prometheus**, **Grafana**, and **cAdvisor*
 
 ---
 
@@ -64,7 +50,7 @@ It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices 
 - **Containerization**: Docker, DockerHub  
 - **CI/CD**: GitHub Actions  
 - **Cloud**: AWS EC2 (Ubuntu 22.04, Free Tier)  
-- **IaC**: Terraform  
+- **Promithus and Grafana**: Monitoring stack
 
 ---
 
