@@ -281,7 +281,7 @@ docker run -d \
   grafana/grafana
 
 ```
-!![Homepage](./assets/graph2.png)
+!![Homepage](./assets/praph2.png)
 
 
 
