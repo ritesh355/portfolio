@@ -5,7 +5,7 @@ This is my **personal portfolio project** built with **Next.js**, containerized 
 It demonstrates both **frontend skills (React/Next.js)** and **DevOps practices (CI/CD, Docker, Cloud, IaC)**.  
 
 ## ⚡ Workflow
-![Workflow Diagram](./public/images/workflow.png)
+![Workflow Diagram](./assets/portfoli01.png)
 
 ---
 
