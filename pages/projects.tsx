@@ -5,6 +5,15 @@ import ProjectCard from "../components/ProjectCard";
 const projects = [
  
   {
+  title: "Jenkins CI/CD Pipeline with Docker & Node.js",
+  description:
+    "A Node.js app deployed with a Jenkins CI/CD pipeline on AWS EC2, using Docker for containerization and automated Docker Hub pushes.",
+  technologies: ["Node.js", "Jenkins", "Docker", "AWS EC2", "Docker Hub"],
+  github: "https://github.com/ritesh355/Docker-Jenkins-app",
+  blog: "https://dev.to/ritesh355/devops-project-jenkins-cicd-pipeline-with-docker-nodejs-2n16", // replace with exact blog link if you write one
+
+  },
+  {
   title: "Static Website Hosting with AWS S3 + CloudFront + CI/CD",
   description:
     "A static website hosted on AWS S3 with CloudFront as CDN and automated deployment via GitHub Actions.",
@@ -12,15 +21,7 @@ const projects = [
   github: "https://github.com/ritesh355/MY-GALLERY-PROJECT", // replace with your repo link
   blog: "", // replace with your blog link if you write one
   },
- {
-  title: "Jenkins CI/CD Pipeline with Docker & Node.js",
-  description:
-    "A Node.js app deployed with a Jenkins CI/CD pipeline on AWS EC2, using Docker for containerization and automated Docker Hub pushes.",
-  technologies: ["Node.js", "Jenkins", "Docker", "AWS EC2", "Docker Hub"],
-  github: "https://github.com/ritesh355/Docker-Jenkins-app",
-  blog: "https://ritesh-devops.hashnode.dev/", // replace with exact blog link if you write one
-
-  },
+ 
  
   {
   title: "CI/CD Pipeline for webapp",
