@@ -4,15 +4,34 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
  
+
+  
+  {
+  title: "DevSecOps Pipeline | Jenkins, Terraform,Ansible, Docker, Trivy, AWS",
+  description:
+    "Designed a complete DevSecOps pipeline integrating CI/CD, Infrastructure as Code, container security, and monitoring. Automated AWS provisioning using Terraform, managed configuration via Ansible (secured with Ansible Vault), used Jenkins for CI/CD of a Flask-based containerized app, integrated Trivy for security scanning, and enabled real-time monitoring and alerting through Prometheus and Grafana.",
+  technologies: ["Jenkins", "Terraform", "Ansible", "Docker", "Trivy", "AWS-EC2","AWS-ECR", "Prometheus", "Grafana"],
+  github: "https://github.com/ritesh355/devsecops-pipeline-with-ansible-terraform", // replace with specific repo if created
+  blog: "https://dev.to/ritesh355/devsecops-pipeline-jenkins-terraform-docker-trivy-aws-3ien", // replace with detailed project blog if available
+},
+{
+  title: "DevOps Personal Portfolio | Next.js, Docker, AWS, GitHub Actions",
+  description:
+    "A fully responsive DevOps-focused portfolio displaying projects, blogs, and GitHub repositories. Implemented CI/CD using GitHub Actions, containerized with Docker, and deployed on AWS. Integrated Prometheus and Grafana for real-time monitoring and performance insights.",
+  technologies: ["Next.js", "Docker", "GitHub Actions", "AWS-EC2", "Cloudfront", "Prometheus", "Grafana"],
+  github: "https://github.com/ritesh355/portfolio", // replace with specific portfolio repo if available
+  blog: "https://dev.to/ritesh355/building-deploying-my-nextjs-portfolio-with-docker-aws-and-cicd-54cf", // replace with a dedicated blog link if you write one
+},
   {
   title: "Jenkins CI/CD Pipeline with Docker & Node.js",
   description:
     "A Node.js app deployed with a Jenkins CI/CD pipeline on AWS EC2, using Docker for containerization and automated Docker Hub pushes.",
-  technologies: ["Node.js", "Jenkins", "Docker", "AWS EC2", "Docker Hub"],
+  technologies: ["Node.js", "Jenkins","Webhook", "Docker", "AWS EC2", "Docker Hub"],
   github: "https://github.com/ritesh355/Docker-Jenkins-app",
   blog: "https://dev.to/ritesh355/devops-project-jenkins-cicd-pipeline-with-docker-nodejs-2n16", // replace with exact blog link if you write one
 
   },
+
   {
   title: "Static Website Hosting with AWS S3 + CloudFront + CI/CD",
   description:
@@ -24,7 +43,7 @@ const projects = [
  
  
   {
-  title: "CI/CD Pipeline for webapp",
+  title: "CI/CD Pipeline for Web App",
   description:
     "Built a fully automated pipeline using Jenkins, Docker, and Kubernetes for seamless deployments.",
   technologies: ["Jenkins", "Docker", "Kubernetes", "AWS"],
@@ -41,22 +60,7 @@ const projects = [
     github: "https://github.com/ritesh355/weather-app",
     blog: "https://ritesh-devops.hashnode.dev/weather-app",
   },
-  {
-    title: "CI/CD Pipeline for E-commerce",
-    description:
-      "Built a fully automated pipeline using Jenkins, Docker, and Kubernetes for seamless deployments.",
-    technologies: ["Jenkins", "Docker", "Kubernetes", "AWS"],
-    github: "https://github.com/ritesh355/ecommerce-cicd",
-    blog: "https://ritesh-devops.hashnode.dev/cicd-ecommerce",
-  },
-  {
-    title: "Monitoring with Prometheus & Grafana",
-    description:
-      "Implemented real-time monitoring and alerting for microservices using Prometheus and Grafana dashboards.",
-    technologies: ["Prometheus", "Grafana", "Docker", "Kubernetes"],
-    github: "https://github.com/ritesh355/monitoring",
-    blog: "https://ritesh-devops.hashnode.dev/monitoring",
-  },
+  
 ];
 
 export default function ProjectsPage() {
@@ -67,7 +71,7 @@ export default function ProjectsPage() {
         <h1 className="text-4xl font-bold text-center mb-12">🚀 My Projects</h1>
 
         {/* Grid with 2 columns */}
-        <div className="grid gap-8 sm:grid-cols-2">
+        <div className="grid gap-8 sm:grid-cols-1">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
