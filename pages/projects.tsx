@@ -23,6 +23,14 @@ const projects = [
   blog: "https://dev.to/ritesh355/building-deploying-my-nextjs-portfolio-with-docker-aws-and-cicd-54cf", // replace with a dedicated blog link if you write one
 },
   {
+  "title": "AWS CI/CD Pipeline with Node.js & EC2",
+  "description": "A Node.js application deployed on AWS EC2 using a fully automated CI/CD pipeline with AWS CodePipeline, CodeBuild, and CodeDeploy. Integrated with GitHub for source control and Amazon S3 for artifact storage, the pipeline automates building and deploying the app, overcoming challenges like EACCES permission errors during deployment.",
+  "technologies": ["Node.js", "AWS CodePipeline", "AWS CodeBuild", "AWS CodeDeploy", "AWS EC2", "Amazon S3", "GitHub", "Webhook"],
+  "github": "https://github.com/ritesh355/my-aws-cicd-app",
+  "blog": "https://dev.to/ritesh355/aws-cicd-pipeline-with-nodejs-ec2" // Replace with actual blog link if you write one
+},
+ 
+  {
   title: "Jenkins CI/CD Pipeline with Docker & Node.js",
   description:
     "A Node.js app deployed with a Jenkins CI/CD pipeline on AWS EC2, using Docker for containerization and automated Docker Hub pushes.",
@@ -31,6 +39,7 @@ const projects = [
   blog: "https://dev.to/ritesh355/devops-project-jenkins-cicd-pipeline-with-docker-nodejs-2n16", // replace with exact blog link if you write one
 
   },
+ 
 
   {
   title: "Static Website Hosting with AWS S3 + CloudFront + CI/CD",
