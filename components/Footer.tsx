@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTelegram, FaFileAlt, FaEnvelope, FaLink } from 
 const socialLinks = [
   { href: "https://github.com/ritesh355", icon: <FaGithub />, label: "GitHub" },
   { href: "https://linkedin.com/in/ritesh-singh-092b84340", icon: <FaLinkedin />, label: "LinkedIn" },
-  { href: "/Ritesh_Singh_DevOps_Resume.pdf", icon: <FaFileAlt />, label: "Resume" }, // Place your resume in /public
+  { href: "/Ritesh_Singh_Cloud_DevOps.pdf", icon: <FaFileAlt />, label: "Resume" }, // Place your resume in /public
   { href: "mailto:riteshsingh86991@gmail.com", icon: <FaEnvelope />, label: "Email" },
   { href: "https://ritesh-devops.hashnode.dev", icon: <FaLink />, label: "Hashnode" },
 ];
