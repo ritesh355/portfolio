@@ -27,7 +27,7 @@ const projects = [
   "description": "A Node.js application deployed on AWS EC2 using a fully automated CI/CD pipeline with AWS CodePipeline, CodeBuild, and CodeDeploy. Integrated with GitHub for source control and Amazon S3 for artifact storage, the pipeline automates building and deploying the app, overcoming challenges like EACCES permission errors during deployment.",
   "technologies": ["Node.js", "AWS CodePipeline", "AWS CodeBuild", "AWS CodeDeploy", "AWS EC2", "Amazon S3", "GitHub", "Webhook"],
   "github": "https://github.com/ritesh355/my-aws-cicd-app",
-  "blog": "https://dev.to/ritesh355/aws-cicd-pipeline-with-nodejs-ec2" // Replace with actual blog link if you write one
+  "blog": "https://dev.to/ritesh355/aws-cicd-nodejs-application-using-aws-codepipeline-codebuild-and-codedeploy-1p5j" // Replace with actual blog link if you write one
 },
  
   {
