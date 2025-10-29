@@ -15,9 +15,9 @@ const projects = [
   blog: "https://dev.to/ritesh355/devsecops-pipeline-jenkins-terraform-docker-trivy-aws-3ien", // replace with detailed project blog if available
 },
 {
-  title: "DevOps Personal Portfolio | Next.js, Docker, AWS, GitHub Actions",
+  title: "Full-Stack DevOps Automation Project | Next.js, Docker, AWS, GitHub Actions, Prometheus,Grafana",
   description:
-    "A fully responsive DevOps-focused portfolio displaying projects, blogs, and GitHub repositories. Implemented CI/CD using GitHub Actions, containerized with Docker, and deployed on AWS. Integrated Prometheus and Grafana for real-time monitoring and performance insights.",
+    "Designed and implemented an end-to-end DevOps pipeline for a Next.js portfolio site. Leveraged GitHub Actions for CI/CD, Docker for containerization, and AWS for cloud hosting. Applied automation best practices to deploy services with high availability and scalability. Integrated Prometheus and Grafana for metrics collection, monitoring, and alerting.",
   technologies: ["Next.js", "Docker", "GitHub Actions", "AWS-EC2", "Cloudfront", "Prometheus", "Grafana"],
   github: "https://github.com/ritesh355/portfolio", // replace with specific portfolio repo if available
   blog: "https://dev.to/ritesh355/building-deploying-my-nextjs-portfolio-with-docker-aws-and-cicd-54cf", // replace with a dedicated blog link if you write one
