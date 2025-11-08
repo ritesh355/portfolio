@@ -47,7 +47,7 @@ const projects = [
     "A static website hosted on AWS S3 with CloudFront as CDN and automated deployment via GitHub Actions.",
   technologies: ["AWS S3", "CloudFront", "GitHub Actions", "CI/CD"],
   github: "https://github.com/ritesh355/MY-GALLERY-PROJECT", // replace with your repo link
-  blog: "", // replace with your blog link if you write one
+  blog: "https://dev.to/ritesh355/devops-and-cloud-project-static-website-hosting-with-aws-s3-cloudfront-cicd-5hhe", // replace with your blog link if you write one
   },
  
  
@@ -58,6 +58,14 @@ const projects = [
   technologies: ["Jenkins", "Docker", "Kubernetes", "AWS"],
   github: "https://github.com/ritesh355/flask-ci-cd-demo",
   blog: "https://ritesh-devops.hashnode.dev/day-40-cicd-with-flask-docker-github-actions-100daysofdevops",
+},
+{
+  title: "Flask + AWS DynamoDB CRUD App | Dockerized Backend with CI/CD",
+  description:
+    "Developed a Flask-based web application integrated with AWS DynamoDB for performing full CRUD operations. Containerized the app using Docker and implemented CI/CD using GitHub Actions. The project demonstrates cloud-native development, AWS SDK (boto3) integration, and scalable backend design following best DevOps practices.",
+  technologies: ["Flask", "AWS-DynamoDB", "Docker", "GitHub Actions", "Python", "Boto3"],
+  github: "https://github.com/ritesh355/aws-dynamodb-flask-app",
+  blog: "" // replace if blog link changes
 },
 
 
