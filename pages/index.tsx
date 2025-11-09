@@ -52,7 +52,7 @@ export default function Home() {
              <ProjectCard
               title="AWS Projects Hub"
               description="A collection of hands-on AWS projects from beginner to advanced. Includes EC2, S3, IAM, VPC, RDS, Lambda, and CI/CD for real-world cloud learning."
-              technologies={["AWS", "EC2", "S3", "IAM", "VPC", "RDS", "Lambda", "CloudFront", "CodePipeline"]}
+              technologies={["AWS", "EC2", "S3", "IAM", "VPC", "RDS", "Lambda", "CloudFront", "CodePipeline", "CodeBuild", "CodeDeploy", "Route53", "APIGateway"]}
               github="https://github.com/ritesh355/aws-projects"
               blog="https://ritesh-devops.hashnode.dev"
            />
@@ -62,7 +62,7 @@ export default function Home() {
    <ProjectCard
     title="DevOps Journal"
     description="My 100 Days of DevOps journey, documenting hands-on practice with Docker, Kubernetes, CI/CD, GitHub Actions, Monitoring, and more."
-    technologies={["DevOps", "Docker", "Kubernetes", "GitHub Actions", "Jenkins", "Terraform", "Linux"]}
+    technologies={["DevOps", "Docker", "Kubernetes", "GitHub Actions", "Jenkins", "Terraform", "Linux", "Ansible", "Git" , "GitHub"]}
     github="https://github.com/ritesh355/Devops-journal"
     blog="https://ritesh-devops.hashnode.dev"
    />
