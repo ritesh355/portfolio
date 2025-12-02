@@ -1,4 +1,4 @@
-# 🚀 Next.js Portfolio – DevOps Ready
+# 🚀 Full-Stack DevOps Automation Project ,Next.js Portfolio – DevOps Ready
 This is **Personal Portfolio Project**  built with **Next.js**, containerized using **Docker**, deployed on **AWS EC2 (Free Tier)**, and distributed globally via **AWS CloudFront CDN**.
 
 The deployment pipeline is fully automated using **GitHub Actions (CI/CD)** — from building the Docker image to pushing it to **Docker Hub** and deploying it on **EC2**.
