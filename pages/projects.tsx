@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
 import ProjectCard from "../components/ProjectCard";
 
 const projects = [
@@ -37,8 +37,8 @@ const projects = [
     "IAM",
     "GitHub"
   ],
-  github: "https://github.com/ritesh355/serverless-ci-cd-pipeline", // replace with your actual repo link
-  blog: "https://dev.to/ritesh355/serverless-cicd-pipeline-with-aws-lambda-and-github", // optional if you write a blog about it
+  github: "https://github.com/ritesh355/serverless-ci-cd-demo", // replace with your actual repo link
+  blog: "https://dev.to/ritesh355/10-end-to-end-devops-projects-docker-aws-jenkins-terraform-ansible-more-9ka", // optional if you write a blog about it
 },
 
  
@@ -114,7 +114,7 @@ export default function ProjectsPage() {
           ))}
         </div>
       </main>
-      <Footer />
+    
     </div>
   );
 }

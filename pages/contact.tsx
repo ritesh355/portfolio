@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { motion } from 'framer-motion';
@@ -192,7 +191,7 @@ export default function Contact() {
           </div>
         </motion.div>
       </main>
-      <Footer />
+      
     </div>
   );
 }

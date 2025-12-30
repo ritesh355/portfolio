@@ -1,7 +1,7 @@
 "use client";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
 import { motion, easeInOut, LazyMotion, domAnimation } from "framer-motion";
 import { Suspense, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
@@ -365,7 +365,7 @@ export default function About() {
         </Suspense>
       </main>
 
-      <Footer />
+     
     </div>
   );
 }

@@ -3,6 +3,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import ProjectCard from "../components/ProjectCard";
+import About from "./about";
+import Projects from "./projects";
+import Skills from "./skills";
+import Contact from "./contact";
+
 import Link from "next/link";
 import { motion, easeOut } from "framer-motion"; // Updated import to include easeOut
 
@@ -43,7 +48,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12">🚀 Featured Projects</h2>
 
           <motion.div
-            className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10"
+            className="max-w-7xl mx-auto grid md:grid-cols-1 gap-10"
             variants={container}
             initial="hidden"
             animate="visible"
@@ -60,14 +65,21 @@ export default function Home() {
           
            <motion.div variants={item}>
    <ProjectCard
-    title="DevOps Journal"
-    description="My 100 Days of DevOps journey, documenting hands-on practice with Docker, Kubernetes, CI/CD, GitHub Actions, Monitoring, and more."
+    title="Complete DevOps Projects Hub"
+    description="Built a centralized repository aggregating 10+ real-world DevOps projects spanning beginner to advanced levels. Organized CI/CD pipelines, cloud infrastructure, monitoring stacks, and automation workflows using Docker, Jenkins, GitHub Actions, AWS, Terraform, Ansible, Prometheus, Grafana, and more."
     technologies={["DevOps", "Docker", "Kubernetes", "GitHub Actions", "Jenkins", "Terraform", "Linux", "Ansible", "Git" , "GitHub"]}
     github="https://github.com/ritesh355/Devops-journal"
     blog="https://ritesh-devops.hashnode.dev"
    />
    </motion.div>
   </motion.div>
+  <section className="bg-white py-20 px-4">
+  <About />
+  <Projects/>
+  <Skills/>
+  <Contact/>
+
+</section>
 
           {/* View All Projects Button */}
   <div className="text-center mt-14">

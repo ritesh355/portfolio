@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 import { motion } from 'framer-motion';
 import { SiGithubactions, SiApachemaven } from "react-icons/si";
 import {
@@ -143,7 +143,7 @@ export default function Skills() {
           </section>
         ))}
       </main>
-      <Footer />
+     
     </div>
   );
 }
