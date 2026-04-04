@@ -12,6 +12,30 @@ import dynamic from "next/dynamic" ;
 // Works (Blogs) Data
 const works = [
   {
+  platform: "Primus (Client: Accenture)",
+  role: "IT Support Engineer",
+  timeline: "April 2026 – Present",
+  points: [
+    "Working in a production environment handling system monitoring, incident management, and troubleshooting.",
+    "Managing IT assets and resolving hardware/software issues to ensure smooth operations.",
+    "Analyzing logs and debugging issues to maintain system availability and performance.",
+    "Gaining exposure to enterprise-level infrastructure and real-world IT operations."
+  ],
+},
+{
+  platform: "Self Projects & DevOps Practice",
+  role: "DevOps Engineer (Hands-on)",
+  timeline: "June 2025 – Present",
+  points: [
+    "Built and deployed CI/CD pipelines using GitHub Actions and Jenkins.",
+    "Containerized applications using Docker and deployed them on AWS infrastructure.",
+    "Worked with Kubernetes for container orchestration and scaling.",
+    "Implemented monitoring solutions using Prometheus, Grafana, and CloudWatch.",
+    "Authored 70+ technical blogs on DevOps and cloud technologies."
+  ],
+  link: "https://ritesh-devops.hashnode.dev/",
+},
+  {
     platform: "Suven Consultants and Technology Pvt Ltd",
     role: "Web Development Intern",
     timeline: "Dec 2023 – Jan 2024",
@@ -243,12 +267,15 @@ export default function About() {
 
               {/* Bio Text */}
               <p className="text-lg text-[#1F2937] dark:text-gray-300 leading-relaxed relative z-10">
-                Hi 👋 I’m <span className="font-semibold text-[#8B5CF6]">Ritesh</span>, a DevOps Engineer passionate about
-                building scalable infrastructure, automating deployments, and bridging the gap between development and
-                operations.  
-                With expertise in <strong>AWS, Terraform, Docker, Kubernetes, and CI/CD</strong>, I love creating reliable
-                systems and sharing my knowledge through blogs.
-              </p>
+  Hi 👋 I’m <span className="font-semibold text-[#8B5CF6]">Ritesh</span>, an IT Support Engineer working on an 
+  <span className="font-semibold text-[#8B5CF6]"> Accenture</span> project in Gurgaon, where I gain hands-on experience in 
+  <strong> IT support, troubleshooting, asset management, and production system monitoring</strong>.
+
+  Alongside my role, I have developed strong hands-on experience in DevOps through real-world projects using 
+  <strong> AWS, Docker, Kubernetes, Terraform, and CI/CD pipelines</strong>. 
+
+  I am passionate about automating deployments and building scalable, reliable cloud infrastructure.
+</p>
             </motion.div>
 
             {/* Works Section */}
